@@ -8,10 +8,10 @@ return (
             <img src="" alt="Fotografia"></img>
         </div>
         <div>
-            
+            <p>Gola</p>
         </div>
     </aside>
 ) 
 }
 
-export default Sidebar
+export default Sidebar  
