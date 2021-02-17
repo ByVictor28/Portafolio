@@ -1,0 +1,28 @@
+.About {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+}
+.Description{
+    margin: 2rem;
+    text-align: start;
+}
+.About p{
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+.Skills{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+@media (max-width: 924px){
+    .About{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

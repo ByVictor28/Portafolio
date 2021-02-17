@@ -1,0 +1,20 @@
+.Card{
+    background: var(--grey);
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    transition: color 500ms ease-in-out;
+    min-width: 12rem !important;
+}
+.Card i{
+    font-size: 6rem;
+    display: block;
+}
+.Card span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 1.5rem;
+}
+.Card:hover{
+    color: var(--cyan);
+}

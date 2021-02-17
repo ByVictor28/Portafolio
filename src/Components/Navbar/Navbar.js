@@ -1,5 +1,15 @@
 import React,{useState} from 'react';
 import classes from "./Navbar.module.css";
+import { Link } from "react-scroll"; 
+
+const ButtonTop = (props)=>{ 
+    return (
+        <div className={classes.ButtonTop}>
+            <i className="fas fa-angle-up"></i>
+        </div>
+    ) 
+}
+
 
 const Navbar = ()=>{
 
@@ -14,16 +24,16 @@ return (
         <nav onClick={() => {setOpenMenu(false)}} className={openMenu ?`${classes.Activo}`:"" }>
             <ul >
                 <li>
-                    <a href="/">Home</a>
+                    <Link href="/" to="#" >Home</Link>
                 </li>
                 <li>
-                    <a href="/">About</a>
+                    <Link href="/" to="About" smooth={true} duration={1500}>About</Link>
                 </li>
                 <li>
-                    <a href="/">Portafolio</a>
+                    <Link href="/" to="Portafolio">Portafolio</Link>
                 </li>
                 <li>
-                    <a href="/">Contact</a>
+                    <Link href="/" to="Contact">Contact</Link>
                 </li>
             </ul>
         </nav> 
@@ -32,6 +42,7 @@ return (
             <i className={`fas fa-bars ${classes.Icon}`} onClick={() => {setOpenMenu(true)}}></i>:
             <i className={`fas fa-times ${classes.Icon}`} onClick={() => {setOpenMenu(false)}}></i>
         }
+        <ButtonTop/>
     </div>
 ) 
 }
