@@ -55,6 +55,7 @@
     padding: 2rem 2.4rem;
     background: var(--cyan);
     border-radius: 50%;
+    cursor: pointer;
 }
 .ButtonTop i{
     font-size: 3rem;

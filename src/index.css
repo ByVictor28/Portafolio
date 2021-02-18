@@ -73,7 +73,7 @@ code {
   font-size: 1.8rem;
   font-weight: bold;
   transition: color 500ms ease, background 500ms ease;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 .button:hover{
   color: var(--grey);

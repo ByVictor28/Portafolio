@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 import classes from "./Navbar.module.css";
 import { Link } from "react-scroll"; 
-
+import {animateScroll as scroll} from "react-scroll"
 const ButtonTop = (props)=>{ 
     return (
-        <div className={classes.ButtonTop}>
-            <i className="fas fa-angle-up"></i>
+        <div className={classes.ButtonTop} onClick={() => scroll.scrollToTop()}>
+            <i className="fas fa-angle-up" ></i>
         </div>
     ) 
 }
@@ -13,7 +13,7 @@ const ButtonTop = (props)=>{
 
 const Navbar = ()=>{
 
-    const [openMenu, setOpenMenu] = useState(true);
+    const [openMenu, setOpenMenu] = useState(false);
 
 
 return (

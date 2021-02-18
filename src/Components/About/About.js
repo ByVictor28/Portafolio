@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../CardSkill/Card'
 import classes from "./About.module.css"
-import {animateScroll as scroll} from "react-scroll"
+
 const skills = [
     {icon:"fab fa-html5", name:"HTML 5"},
     {icon:"fab fa-css3-alt", name:"CSS 3"},
@@ -22,7 +22,7 @@ return (
                     <h3>WHO AM I</h3>
                     <p>I'm Victor a computer systems engineering student and a freelancer Full Stack (MERN) &#x1F9D1; &#x200D; &#x1F393;	 
                     <br></br>Developer from Zacatecas who never stop learning and want to create a bigth future &#x2600; </p>
-                    <a className="button" onClick={() => scroll.scrollToTop()}>Download CV</a>
+                    <a className="button">Download CV</a>
                 </div>
 
                 <div>
