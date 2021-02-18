@@ -3,7 +3,7 @@ import classes from "./Card.module.css"
 
 const Card = ({icon,name})=>{ 
 return (
-    <div className={classes.Card}>
+    <div className={`${classes.Card} sombra`}>
         <i className={icon}></i>
         <span>{name}</span> 
     </div>

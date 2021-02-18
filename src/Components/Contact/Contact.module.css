@@ -1,0 +1,31 @@
+/* CARD */
+.CardContact{
+    background: var(--grey);
+    display: block;
+    /* padding: 7rem; */
+    /* width: 2rem;
+    height: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.CardContact a {
+    padding: 7rem;
+    color: var(--white);
+    transition: color 1s ease;
+}
+.CardContact i{
+    font-size: 5rem;
+}
+.CardContact a:hover{
+    color: var(--cyan);
+}
+/* CONTACTS */
+.Contact div{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}

@@ -5,13 +5,13 @@ import {animateScroll as scroll} from "react-scroll"
 const ButtonTop = (props)=>{ 
     return (
         <div className={classes.ButtonTop} onClick={() => scroll.scrollToTop()}>
-            <i className="fas fa-angle-up" ></i>
+            <i className="fas fa-angle-up"></i>
         </div>
     ) 
 }
 
 
-const Navbar = ()=>{
+const Navbar = ({click})=>{
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -19,21 +19,23 @@ const Navbar = ()=>{
 return (
     <div className={`${classes.Navbar}`}>
        <div className={classes.Logo}>
-            <p> {'<'} <span>VictorD</span> {'/>'} </p>
+            <p onClick={() => scroll.scrollToTop()}> {'<'} <span>VictorD</span> {'/>'} </p>
         </div>
         <nav onClick={() => {setOpenMenu(false)}} className={openMenu ?`${classes.Activo}`:"" }>
             <ul >
                 <li>
-                    <Link href="/" to="#" >Home</Link>
+                    <Link href="/" to="About" smooth={true} duration={700}>About</Link>
                 </li>
                 <li>
-                    <Link href="/" to="About" smooth={true} duration={1500}>About</Link>
+                    <Link href="/" to="Portafolio" smooth={true} duration={700}>Portafolio</Link>
                 </li>
                 <li>
-                    <Link href="/" to="Portafolio">Portafolio</Link>
+                    <Link href="/" to="Contact" smooth={true} duration={700}>Contact</Link>
                 </li>
                 <li>
-                    <Link href="/" to="Contact">Contact</Link>
+                    <div className={classes.Toogle} onClick={click}>
+                        <i className="fas fa-moon"></i>
+                    </div>
                 </li>
             </ul>
         </nav> 

@@ -16,6 +16,7 @@
     margin: 0;
     font-size: 3rem;
     color: var(--cyan);
+    cursor: pointer;
 }
 
 .Logo p span{

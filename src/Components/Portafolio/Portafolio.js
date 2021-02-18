@@ -3,7 +3,7 @@ import classes from "./Portafolio.module.css"
 
 const Project = ({name,image,description,linkPage,linkRepository})=>{ 
     return (
-        <div className={classes.Project}>
+        <div className={`${classes.Project} sombra`} id="Portafolio">
             <div className={classes.Image}>
                 <img src={`/imagenes/Projects/${image}`} alt="Project"/>
             </div>

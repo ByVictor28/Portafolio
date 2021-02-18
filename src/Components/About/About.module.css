@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    color: white;
 }
 @media (max-width: 924px){
     .About{

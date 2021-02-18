@@ -53,6 +53,7 @@ code {
   border-bottom: .5rem solid var(--cyan);
   border-right: .5rem solid var(--cyan);
   padding:0 2rem 1rem .5rem;
+  margin-bottom: 5rem;
 }
 .container h3{
   font-size: 2.3rem;
@@ -78,4 +79,24 @@ code {
 .button:hover{
   color: var(--grey);
   background: var(--white);
+}
+.sombra{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* FOOTER */
+footer{
+  margin-top: 2rem;
+  background: var(--grey);
+  padding: 3rem 0;
+  text-align: center;
+}
+footer::after{
+  content: "";
+  background: rebeccapurple;
+  width: 10rem;
+  height: 1rem;
+  top: 0;
+  left: 0;
+
 }
