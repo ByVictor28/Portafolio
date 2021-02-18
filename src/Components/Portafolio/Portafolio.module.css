@@ -4,6 +4,12 @@
     height: 20rem;
     /* background: purple;  */
     position: relative;
+    filter: grayscale(1);
+    color: white;
+    
+}
+.Project:hover{
+    filter: grayscale(0) !important;
 }
 
 .Project .Image img {
@@ -11,7 +17,6 @@
     height:20rem;
     object-fit: fill;
     border-radius: 1rem;
-    filter: grayscale(1);
     transition: filter 0.5s ease;
 }
 
@@ -44,9 +49,7 @@
 .Project:hover .Mask{
     height: 70%;
 }
-.Project:hover .Image img {
-    filter: grayscale(0);
-}  
+  
 .Source{
     /* padding: 2rem; */
     display: flex;

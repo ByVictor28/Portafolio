@@ -10,16 +10,15 @@
     align-items: center;
     
 }
-.CardContact a {
+.CardContact a{
     padding: 7rem;
-    color: var(--white);
     transition: color 1s ease;
 }
 .CardContact i{
     font-size: 5rem;
 }
 .CardContact a:hover{
-    color: var(--cyan);
+    color: var(--cyan) !important;
 }
 /* CONTACTS */
 .Contact div{

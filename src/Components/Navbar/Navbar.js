@@ -1,7 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import classes from "./Navbar.module.css";
 import { Link } from "react-scroll"; 
 import {animateScroll as scroll} from "react-scroll"
+import themeContext,{themes} from '../../theme';
+
 const ButtonTop = (props)=>{ 
     return (
         <div className={classes.ButtonTop} onClick={() => scroll.scrollToTop()}>
@@ -15,6 +17,13 @@ const Navbar = ({click})=>{
 
     const [openMenu, setOpenMenu] = useState(false);
 
+    const {themeSlected, setThemeSlected} = useContext(themeContext)
+
+    const toggle = () =>{
+        themeSlected === themes.dark
+        ? setThemeSlected(themes.light)
+        : setThemeSlected(themes.dark)
+    }
 
 return (
     <div className={`${classes.Navbar}`}>
@@ -33,7 +42,7 @@ return (
                     <Link href="/" to="Contact" smooth={true} duration={700}>Contact</Link>
                 </li>
                 <li>
-                    <div className={classes.Toogle} onClick={click}>
+                    <div className={classes.Toogle} onClick={toggle}>
                         <i className="fas fa-moon"></i>
                     </div>
                 </li>

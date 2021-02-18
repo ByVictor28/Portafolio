@@ -1,13 +1,17 @@
-import React from 'react'
-import classes from "./Portafolio.module.css"
+import React,{useContext} from 'react';
+import classes from "./Portafolio.module.css";
+import themeContext from "../../theme";
 
 const Project = ({name,image,description,linkPage,linkRepository})=>{ 
+    
+    const {themeSlected, setThemeSlected} = useContext(themeContext);
+
     return (
-        <div className={`${classes.Project} sombra`} id="Portafolio">
+        <div className={`${classes.Project} sombra`} id="Portafolio" style={{filter:themeSlected.filter}}>
             <div className={classes.Image}>
                 <img src={`/imagenes/Projects/${image}`} alt="Project"/>
             </div>
-            <div className={classes.Mask}>
+            <div className={classes.Mask} >
                 <div className={classes.Content}>
                     <h4>{name}</h4>
                     <span>{description}</span>
@@ -31,8 +35,10 @@ const ProjectList = [
     // {name:"",image:"",description:"",linkPage:"",linkRepository:""},
 ]
 
-const Portafolio = (props)=>{ 
-return (
+const Portafolio = ()=>{ 
+
+
+    return (
     <div className={classes.Portafolio}>
         <h2>Portafolio</h2>
         <div className={classes.Projects}>

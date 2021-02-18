@@ -90,13 +90,5 @@ footer{
   background: var(--grey);
   padding: 3rem 0;
   text-align: center;
-}
-footer::after{
-  content: "";
-  background: rebeccapurple;
-  width: 10rem;
-  height: 1rem;
-  top: 0;
-  left: 0;
-
+  color: white;
 }
