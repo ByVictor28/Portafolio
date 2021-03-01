@@ -17,8 +17,8 @@ const Project = ({name,image,description,linkPage,linkRepository})=>{
                     <span>{description}</span>
                     
                     <div className={classes.Source}>
-                        <a href={linkPage} className={"button"}>See project</a>
-                        <a href={linkRepository}><i className="fab fa-github"></i></a>
+                        <a href={linkPage} target="_blank" className={"button"}>See project</a>
+                        <a href={linkRepository} target="_blank" ><i className="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -28,10 +28,10 @@ const Project = ({name,image,description,linkPage,linkRepository})=>{
 
 const ProjectList = [
     {name:"BDNA",image:"bdna.png",description:"Page in honor to a youtue chanell about gamer news",linkPage:"",linkRepository:""},
-    {name:"Bienes raices",image:"Bienes.png",description:"Page made as part of a curse in UDEMY",linkPage:"",linkRepository:""},
-    {name:"Blog cafe",image:"Blog_cafe.png",description:"Page made as part of a curse in UDEMY",linkPage:"",linkRepository:""},
-    {name:"Burger Builder",image:"burger.png",description:"Page made as part of a curse in UDEMY",linkPage:"",linkRepository:""},
-    {name:"To do List",image:"Todo.png",description:"Page made as part of a curse in UDEMY",linkPage:"",linkRepository:""},
+    {name:"Bienes raices",image:"NotFound.png",description:"Page made as an example of not found",linkPage:"https://cranky-williams-be276f.netlify.app/",linkRepository:"https://github.com/ByVictor28/Not-Found"},
+    {name:"Blog cafe",image:"Social.png",description:"Social dashboard (backend cloud function)",linkPage:"https://sleepy-morse-3e809f.netlify.app/",linkRepository:"https://github.com/ByVictor28/social-dashboard"},
+    {name:"Burger Builder",image:"burger.png",description:"Burger builder (React course)",linkPage:"",linkRepository:""},
+    {name:"To do List",image:"Weather.png",description:"Weather App",linkPage:"https://hungry-liskov-e861c5.netlify.app/",linkRepository:"https://github.com/ByVictor28/Weather"},
     // {name:"",image:"",description:"",linkPage:"",linkRepository:""},
 ]
 
