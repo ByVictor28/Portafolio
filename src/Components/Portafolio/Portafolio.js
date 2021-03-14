@@ -32,7 +32,7 @@ const ProjectList = [
     {name:"Blog cafe",image:"Social.png",description:"Social dashboard (backend cloud function)",linkPage:"https://sleepy-morse-3e809f.netlify.app/",linkRepository:"https://github.com/ByVictor28/social-dashboard"},
     {name:"Burger Builder",image:"burger.png",description:"Burger builder (React course)",linkPage:"",linkRepository:""},
     {name:"To do List",image:"Weather.png",description:"Weather App",linkPage:"https://hungry-liskov-e861c5.netlify.app/",linkRepository:"https://github.com/ByVictor28/Weather"},
-    // {name:"",image:"",description:"",linkPage:"",linkRepository:""},
+    {name:"IP Tracker",image:"iptracker.png",description:"Ip tracker",linkPage:"https://peaceful-khorana-a5181a.netlify.app/",linkRepository:"https://github.com/ByVictor28/iptraker"},
 ]
 
 const Portafolio = ()=>{ 
