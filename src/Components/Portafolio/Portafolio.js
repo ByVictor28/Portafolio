@@ -28,10 +28,10 @@ const Project = ({name,image,description,linkPage,linkRepository})=>{
 
 const ProjectList = [
     {name:"Rock Paper Scissors",image:"rock.png",description:"Play Rock Paper Scissors with your friend",linkPage:"https://zen-snyder-e98dfa.netlify.app/",linkRepository:"https://github.com/ByVictor28/RockPaperScissors2"},
-    {name:"Bienes raices",image:"NotFound.png",description:"Page made as an example of not found",linkPage:"https://cranky-williams-be276f.netlify.app/",linkRepository:"https://github.com/ByVictor28/Not-Found"},
-    {name:"Blog cafe",image:"Social.png",description:"Social dashboard (backend cloud function)",linkPage:"https://sleepy-morse-3e809f.netlify.app/",linkRepository:"https://github.com/ByVictor28/social-dashboard"},
-    {name:"Pokemon Browser",image:"pokemon.png",description:"Search for you pokemon",linkPage:"https://kind-banach-2ba2e8.netlify.app/",linkRepository:"https://github.com/ByVictor28/pokemon"},
-    {name:"To do List",image:"Weather.png",description:"Weather App",linkPage:"https://hungry-liskov-e861c5.netlify.app/",linkRepository:"https://github.com/ByVictor28/Weather"},
+    {name:"Not Found Page",image:"NotFound.png",description:"Page made as an example of not found",linkPage:"https://cranky-williams-be276f.netlify.app/",linkRepository:"https://github.com/ByVictor28/Not-Found"},
+    {name:"Social Dashboard",image:"Social.png",description:"Social dashboard (backend cloud function)",linkPage:"https://sleepy-morse-3e809f.netlify.app/",linkRepository:"https://github.com/ByVictor28/social-dashboard"},
+    {name:"Pokemon Browser",image:"pokemon.png",description:"Search for your favorite pokemon",linkPage:"https://kind-banach-2ba2e8.netlify.app/",linkRepository:"https://github.com/ByVictor28/pokemon"},
+    {name:"Weather App",image:"Weather.png",description:"Check the wather in your country",linkPage:"https://hungry-liskov-e861c5.netlify.app/",linkRepository:"https://github.com/ByVictor28/Weather"},
     {name:"IP Tracker",image:"iptracker.png",description:"Ip tracker",linkPage:"https://peaceful-khorana-a5181a.netlify.app/",linkRepository:"https://github.com/ByVictor28/iptraker"},
 ]
 

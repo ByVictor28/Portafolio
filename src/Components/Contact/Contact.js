@@ -29,7 +29,7 @@ return (
                 <a style={{color:themeSlected.color}} href="https://github.com/ByVictor28" target="_blank"><i className="fab fa-github-square"></i></a>
             </CardContact>
             <CardContact>
-                <a style={{color:themeSlected.color}} href="https://www.linkedin.com/in/victor-delfin-8a32a416a/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a style={{color:themeSlected.color}} href="https://www.linkedin.com/in/victordelfin/" target="_blank"><i className="fab fa-linkedin"></i></a>
             </CardContact>
         </div>
     </div>
