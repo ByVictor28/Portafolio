@@ -1,97 +1,104 @@
-.Navbar{
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    color: white;
-    /* background: black; */
+.Navbar {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: white;
+  /* background: black; */
 }
 
-.Logo p{
-    margin: 0;
-    font-size: 3rem;
-    color: var(--cyan);
-    cursor: pointer;
+.Logo p {
+  margin: 0;
+  font-size: 3rem;
+  color: var(--cyan);
+  cursor: pointer;
 }
 
-.Logo p span{
-    color: var(--white);
+.Logo p span {
+  color: var(--white);
 }
-.Navbar nav{
-    /* background: pink; */
-    padding: 0 4rem;
+.Navbar nav {
+  /* background: pink; */
+  padding: 0 4rem;
 }
-.Navbar nav ul{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 2rem;
-    justify-content: space-between;
+.Navbar nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  justify-content: space-between;
 }
-.Navbar nav ul li{
-    list-style: none;
+.Navbar nav ul li {
+  list-style: none;
 }
-.Navbar nav ul li a{
-    color: var(--white);
-    text-decoration: none;
-    /* background: pink; */
-    padding: 1rem 2rem;
-    text-align: center;
+.Navbar nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  /* background: pink; */
+  padding: 1rem 2rem;
+  text-align: center;
 }
-.Navbar nav ul li a:hover{
-    color: var(--cyan);
+.Navbar nav ul li a:hover {
+  color: var(--cyan);
 }
-.Icon{
-    display: none;
+.Icon {
+  display: none;
 }
-.ButtonTop{
+.ButtonTop {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  padding: 2rem 2.4rem;
+  background: var(--cyan);
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+.ButtonTop i {
+  font-size: 3rem;
+}
+
+.Theme {
+  cursor: pointer;
+}
+.Theme:hover {
+  color: var(--cyan);
+}
+@media screen and (max-width: 1000px) {
+  .Icon {
+    display: block;
+  }
+  .Navbar nav {
     position: fixed;
-    bottom: 4rem;
-    right: 4rem;
-    padding: 2rem 2.4rem;
-    background: var(--cyan);
-    border-radius: 50%;
-    cursor: pointer;
-    color: white;
-}
-.ButtonTop i{
-    font-size: 3rem;
-}
-@media screen and (max-width: 1000px){
-    .Icon{
-        display: block;
-    }
-    .Navbar nav{
-        position: fixed;
-        top: 0;
-        left: -90rem;
-        width: 90%;
-        height: 100vh;
-        background: var(--dark);
-        padding: 0 4rem;
-        transition: left 500ms ease;
-    }
-    .Navbar nav ul{
-        flex-direction: column;
-        align-items: center;
-    }
-    .Navbar nav ul li{
-        margin: 3rem;
-    }
+    top: 0;
+    left: -90rem;
+    width: 90%;
+    height: 100vh;
+    background: var(--dark);
+    padding: 0 4rem;
+    transition: left 500ms ease;
+  }
+  .Navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navbar nav ul li {
+    margin: 3rem;
+  }
 
-    .Navbar nav ul li a{
-        /* background: red; */
-        text-align: center;
-        padding: 3rem 5rem;
-        font-size: 4rem;
-    }
-    .Activo{
-        left: 0 !important;
-    }
+  .Navbar nav ul li a {
+    /* background: red; */
+    text-align: center;
+    padding: 3rem 5rem;
+    font-size: 4rem;
+  }
+  .Activo {
+    left: 0 !important;
+  }
 }

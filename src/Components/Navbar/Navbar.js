@@ -43,7 +43,12 @@ return (
                 </li>
                 <li>
                     <div className={classes.Toogle} onClick={toggle}>
-                        <i className="fas fa-moon"></i>
+                        {
+                            themeSlected === themes.dark ? 
+                            <i className={`fas fa-moon ${classes.Theme}`}></i>
+                            :
+                            <i className={`fas fa-sun ${classes.Theme}`}></i>
+                        }
                     </div>
                 </li>
             </ul>

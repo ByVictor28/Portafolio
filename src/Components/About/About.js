@@ -12,6 +12,7 @@ const skills = [
     {icon:"fab fa-git", name:"GIT"},
     {icon:"fab fa-node", name:"NODE JS"},
     {icon:"fab fa-react", name:"REACT / NEXT.JS"},   
+    {icon:"fab fa-vuejs", name:"VUE 3"},   
 ]
 
 const About = ()=>{ 
