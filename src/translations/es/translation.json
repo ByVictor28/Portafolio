@@ -1,0 +1,50 @@
+{
+  "navbar":{
+    "about":"Acerca de",
+    "portafolio":"Portafolio",
+    "contact":"Contacto"
+  },
+  "hero":{
+    "hi":"Hola",
+    "iAm":"Yo soy",
+    "position":"Full Stack Developer"
+  },
+  "knowMe":{
+    "title":"¿QUIÉN SOY?",
+    "part1":"Soy Víctor, estudiante de ingeniería en sistemas computacionales y freelance Full Stack (MERN) comprometido con la entrega de resultados de alta calidad. Me encanta trabajar con un equipo de personas talentosas para lograr objetivos y ayudar a mis compañeros de equipo.",
+    "part2":"Como desarrollador, trato de crear cosas que nadie más ha creado antes y trato de aprender lo mas que pueda.",
+    "cvButton":"Descargar CV",
+    "subtitle":"HABILIDADES"
+  },
+  "portafolio":{
+    "project":"Ver projecto",
+    "projects":[
+      {
+        "title":"Piedra Papel o Tijeras",
+        "description":"Juega piedra papel o tijeras con un amigo"
+      },
+      {
+        "title":"Pagina #404",
+        "description":"Pagina hecha como ejemplo de un 404"
+      },
+      {
+        "title":"Panel social",
+        "description":"Panel social (backend cloud function)"
+      },
+      {
+        "title":"Navegador de Pokémon",
+        "description":"Busca tu Pokémon favorito"
+      },
+      {
+        "title":"Aplicación del clima",
+        "description":"Consulta el clima en tu país"
+      },
+      {
+        "title":"IP Tracker",
+        "description":"IP Tracker"
+      }
+    ]
+  },
+  "contact":"Contactame",
+  "copyright":"Todos los derechos reservados"
+}

@@ -3,6 +3,8 @@ import classes from "./Navbar.module.css";
 import { Link } from "react-scroll"; 
 import {animateScroll as scroll} from "react-scroll"
 import themeContext,{themes} from '../../theme';
+import { useTranslation } from 'react-i18next';
+import { FlagIcon } from "react-flag-kit";
 
 const ButtonTop = (props)=>{ 
     return (
@@ -14,11 +16,24 @@ const ButtonTop = (props)=>{
 
 
 const Navbar = ({click})=>{
+    const { t, i18n } = useTranslation();
+
 
     const [openMenu, setOpenMenu] = useState(false);
 
     const {themeSlected, setThemeSlected} = useContext(themeContext)
 
+    const [spanishSelected, setSpanishSelected] = useState(false)
+    
+    const changeLanguage = (lng) => {
+        if (lng === "es") {    
+            setSpanishSelected(true)
+        }else{
+            setSpanishSelected(false)
+        }
+        i18n.changeLanguage(lng);
+    }
+    
     const toggle = () =>{
         themeSlected === themes.dark
         ? setThemeSlected(themes.light)
@@ -27,19 +42,20 @@ const Navbar = ({click})=>{
 
 return (
     <div className={`${classes.Navbar}`}>
-       <div className={classes.Logo}>
+        <div className={classes.Logo}>
             <p onClick={() => scroll.scrollToTop()}> {'<'} <span>VictorD</span> {'/>'} </p>
         </div>
+        
         <nav onClick={() => {setOpenMenu(false)}} className={openMenu ?`${classes.Activo}`:"" }>
             <ul >
                 <li>
-                    <Link href="/" to="About" smooth={true} duration={700}>About</Link>
+                    <Link href="/" to="About" smooth={true} duration={700}>{t('navbar.about')}</Link>
                 </li>
                 <li>
-                    <Link href="/" to="Portafolio" smooth={true} duration={700}>Portafolio</Link>
+                    <Link href="/" to="Portafolio" smooth={true} duration={700}>{t('navbar.portafolio')}</Link>
                 </li>
                 <li>
-                    <Link href="/" to="Contact" smooth={true} duration={700}>Contact</Link>
+                    <Link href="/" to="Contact" smooth={true} duration={700}>{t('navbar.contact')}</Link>
                 </li>
                 <li>
                     <div className={classes.Toogle} onClick={toggle}>
@@ -52,6 +68,10 @@ return (
                     </div>
                 </li>
             </ul>
+            <div className={classes.Flags}>
+                <FlagIcon className={!spanishSelected&&classes.disabled} code="US" size={30} onClick={() => changeLanguage('en')}/>
+                <FlagIcon className={spanishSelected&&classes.disabled} code="MX" size={30} onClick={() => changeLanguage('es')}/>
+            </div>
         </nav> 
         {
             !openMenu?

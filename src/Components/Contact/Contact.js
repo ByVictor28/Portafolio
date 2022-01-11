@@ -1,6 +1,7 @@
 import React,{useContext} from 'react'
 import classes from "./Contact.module.css"
 import themeContext from "../../theme";
+import { useTranslation } from 'react-i18next';
 
 const CardContact = ({children})=>{ 
     
@@ -13,11 +14,11 @@ const CardContact = ({children})=>{
 }
 
 const Contact = (props)=>{ 
-    
+    const {t} = useTranslation();
     const {themeSlected, setThemeSlected} = useContext(themeContext)
 return (
     <div className={classes.Contact} id="Contact">
-        <h2>Contact me</h2> 
+        <h2>{t(`contact`)}</h2> 
         <div>
             <CardContact>
                 <a style={{color:themeSlected.color}} href="mailto:victormanu31611@gmail.com"><i className="fas fa-envelope"></i></a>

@@ -1,7 +1,9 @@
 import React from 'react'
 import classes from "./Hero.module.css"
+import { useTranslation } from 'react-i18next';
 
 const Hero = (props)=>{ 
+    const { t } = useTranslation();
 return (
     <div className={classes.Hero}>
         <img src="/imagenes/laptop.jpg" alt="Hero image"></img>
@@ -10,9 +12,9 @@ return (
                 <img src="/imagenes/Image.jpg" alt="Image User"></img>
             </div>
             <div className={classes.Description}>
-                <span>Hi!!!</span>
-                <h1>I'm Victor Manuel Delfin Santos</h1>
-                <span>--Full Stack Developer--</span>
+                <span>{t('hero.hi')}!!!</span>
+                <h1>{t('hero.iAm')} Victor Manuel Delfin Santos</h1>
+                <span>--{t('hero.position')}--</span>
             </div>
         </div> 
     </div>

@@ -1,9 +1,9 @@
 import React,{useContext} from 'react';
 import classes from "./Portafolio.module.css";
 import themeContext from "../../theme";
-
+import { useTranslation } from 'react-i18next';
 const Project = ({name,image,description,linkPage,linkRepository})=>{ 
-    
+    const { t } = useTranslation();
     const {themeSlected, setThemeSlected} = useContext(themeContext);
 
     return (
@@ -17,7 +17,7 @@ const Project = ({name,image,description,linkPage,linkRepository})=>{
                     <span>{description}</span>
                     
                     <div className={classes.Source}>
-                        <a href={linkPage} target="_blank" className={"button"}>See project</a>
+                        <a href={linkPage} target="_blank" className={"button"}>{t('portafolio.project')}</a>
                         <a href={linkRepository} target="_blank" ><i className="fab fa-github"></i></a>
                     </div>
                 </div>
@@ -36,8 +36,7 @@ const ProjectList = [
 ]
 
 const Portafolio = ()=>{ 
-
-
+    const { t } = useTranslation();
     return (
     <div className={classes.Portafolio}>
         <h2>Portafolio</h2>
@@ -46,9 +45,9 @@ const Portafolio = ()=>{
                 return (
                     <Project
                         key={`${index}-${project.name}`}
-                        name={project.name}
+                        name={t(`portafolio.projects.${index}.title`)}
                         image={project.image}
-                        description={project.description}
+                        description={t(`portafolio.projects.${index}.description`)}
                         linkPage={project.linkPage}
                         linkRepository={project.linkRepository}
                     
