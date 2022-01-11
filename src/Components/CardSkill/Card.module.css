@@ -4,10 +4,16 @@
     border-radius: 2rem;
     transition: color 500ms ease-in-out;
     min-width: 12rem !important;
+    /* outline: 1px red solid; */
 }
 .Card i{
     font-size: 6rem;
     display: block;
+    /* outline: 1px blue solid; */
+}
+.Card svg{
+    /* height: 5rem; */
+    /* outline: 1px blue solid; */
 }
 .Card span{
     font-size: 1.5rem;

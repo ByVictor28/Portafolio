@@ -33,6 +33,9 @@ return (
                     <h3>{t('knowMe.SKILLS')}</h3>
                     <div className={classes.Skills}>
                         {skills.map((element,index) => <Card name={element.name} icon={element.icon} key={index} />)}
+                        <Card name="Tailwind">
+                            <svg width="100" height="60" viewBox="0 -10 30 40"fill="#16BDCA"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0zM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9z"></path></svg>
+                        </Card>
                     </div>
                 </div>
         </div>
