@@ -5,10 +5,11 @@ import Navbar from "./Components/Navbar/Navbar";
 import Portafolio from "./Components/Portafolio/Portafolio";
 import {useContext,useState,useMemo} from "react";
 import themeContext, {themes} from "./theme"
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [themeSlected, setThemeSlected] = useState(themes.dark)
-
+  const {t} = useTranslation();
   const themeProvider = useMemo(() => ({themeSlected,setThemeSlected}),[themeSlected,setThemeSlected]);
   const scrollEvent = (e) => {
     const target = e.target;
@@ -28,7 +29,7 @@ function App() {
           </div>
           <footer>
             <p>Copyright © 2021. Victor Manuel Delfin Santos</p>
-            <p>All Rights Reserved</p>
+            <p>{t(`copyright`)}</p>
           </footer>
         </div>
     </themeContext.Provider>

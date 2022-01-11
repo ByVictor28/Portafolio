@@ -12,7 +12,16 @@
   color: white;
   /* background: black; */
 }
-
+.Flags{
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+.disabled{
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
 .Logo p {
   margin: 0;
   font-size: 3rem;
@@ -26,6 +35,9 @@
 .Navbar nav {
   /* background: pink; */
   padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Navbar nav ul {
   display: flex;
