@@ -61,6 +61,7 @@
 }
 .Icon {
   display: none;
+  cursor: pointer;
 }
 .ButtonTop {
   position: fixed;
@@ -81,6 +82,9 @@
 }
 .Theme:hover {
   color: var(--cyan);
+}
+.IconMenu {
+  display: none;
 }
 @media screen and (max-width: 1000px) {
   .Icon {
@@ -112,5 +116,15 @@
   }
   .Activo {
     left: 0 !important;
+    border: 3px solid red;
+    position: relative;
+  }
+  .IconMenu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 3rem;
+    cursor: pointer;
   }
 }

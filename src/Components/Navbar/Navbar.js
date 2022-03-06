@@ -53,6 +53,12 @@ const Navbar = ({ click }) => {
         }}
         className={openMenu ? `${classes.Activo}` : ""}
       >
+        <i
+          className={`fas fa-times ${classes.IconMenu}`}
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+        ></i>
         <ul>
           <li>
             <Link
@@ -61,6 +67,7 @@ const Navbar = ({ click }) => {
               to="About"
               smooth={true}
               duration={700}
+              onClick={() => setOpenMenu(false)}
             >
               {t("navbar.about")}
             </Link>
@@ -72,6 +79,7 @@ const Navbar = ({ click }) => {
               to="Portafolio"
               smooth={true}
               duration={700}
+              onClick={() => setOpenMenu(false)}
             >
               {t("navbar.portafolio")}
             </Link>
@@ -83,6 +91,7 @@ const Navbar = ({ click }) => {
               to="Contact"
               smooth={true}
               duration={700}
+              onClick={() => setOpenMenu(false)}
             >
               {t("navbar.contact")}
             </Link>
