@@ -12,13 +12,13 @@
   color: white;
   /* background: black; */
 }
-.Flags{
+.Flags {
   display: flex;
   gap: 2rem;
   cursor: pointer;
   margin-left: 3rem;
 }
-.disabled{
+.disabled {
   filter: grayscale(1);
   cursor: not-allowed;
 }
@@ -30,7 +30,7 @@
 }
 
 .Logo p span {
-  color: var(--white);
+  /* color: var(--white); */
 }
 .Navbar nav {
   /* background: pink; */
@@ -50,7 +50,7 @@
   list-style: none;
 }
 .Navbar nav ul li a {
-  color: var(--white);
+  /* color: var(--white); */
   text-decoration: none;
   /* background: pink; */
   padding: 1rem 2rem;

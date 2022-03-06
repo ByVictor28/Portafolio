@@ -1,50 +1,51 @@
 {
-  "navbar":{
-    "about":"About",
-    "portafolio":"Portafolio",
-    "contact":"Contact"
+  "navbar": {
+    "about": "About",
+    "portafolio": "Portafolio",
+    "contact": "Contact"
   },
-  "hero":{
-    "hi":"Hi",
-    "iAm":"I'm",
-    "position":"Full Stack Developer"
+  "hero": {
+    "hi": "Hi",
+    "iAm": "I'm",
+    "position": "Full Stack Developer"
   },
-  "knowMe":{
-    "title":"WHO AM I",
-    "part1":"I'm Victor a computer systems engineering student and a freelancer Full Stack (MERN) who is committed to delivering high-quality results. I love working with a team of talented individuals to achieve goals, and to help my fellow team members.",
-    "part2":"As a developer I try to create things that no one else has ever created before and I'm a life long learner",
-    "cvButton":"Download CV",
-    "subtitle":"SKILLS"
+  "knowMe": {
+    "header": "KNOW ME",
+    "title": "WHO AM I",
+    "part1": "I'm Victor a computer systems engineering student and a freelancer Full Stack (MERN) who is committed to delivering high-quality results. I love working with a team of talented individuals to achieve goals, and to help my fellow team members.",
+    "part2": "As a developer I try to create things that no one else has ever created before and I'm a life long learner",
+    "cvButton": "Download CV",
+    "subtitle": "SKILLS"
   },
-  "portafolio":{
-    "project":"See project",
-    "projects":[
+  "portafolio": {
+    "project": "See project",
+    "projects": [
       {
-        "title":"Rock Paper Scissors",
-        "description":"Play Rock Paper Scissors with your friend"
+        "title": "Rock Paper Scissors",
+        "description": "Play Rock Paper Scissors with your friend"
       },
       {
-        "title":"Not Found Page",
-        "description":"Page made as an example of not found"
+        "title": "Not Found Page",
+        "description": "Page made as an example of not found"
       },
       {
-        "title":"Social Dashboard",
-        "description":"Social dashboard (backend cloud function)"
+        "title": "Social Dashboard",
+        "description": "Social dashboard (backend cloud function)"
       },
       {
-        "title":"Pokemon Browser",
-        "description":"Search for your favorite pokemon"
+        "title": "Pokemon Browser",
+        "description": "Search for your favorite pokemon"
       },
       {
-        "title":"Weather App",
-        "description":"Check the weather in your country"
+        "title": "Weather App",
+        "description": "Check the weather in your country"
       },
       {
-        "title":"IP Tracker",
-        "description":"IP Tracker"
+        "title": "IP Tracker",
+        "description": "IP Tracker"
       }
     ]
   },
-  "contact":"Contact me",
-  "copyright":"All Rights Reserved"
+  "contact": "Contact me",
+  "copyright": "All Rights Reserved"
 }
