@@ -116,7 +116,6 @@
   }
   .Activo {
     left: 0 !important;
-    border: 3px solid red;
     position: relative;
   }
   .IconMenu {

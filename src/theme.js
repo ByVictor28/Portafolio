@@ -4,14 +4,14 @@ export const themes = {
   dark: {
     color: "var(--white)",
     background: "var(--dark)",
-    heroBackground: "var(--dark)",
+    heroBackground: "rgba(0, 0, 0, .6)",
     filter: "grayscale(1)",
     text: "white",
   },
   light: {
     color: "var(--dark)",
     background: "var(--white)",
-    heroBackground: "transparent",
+    heroBackground: "rgba(255, 255, 255, .3)",
     filter: "grayscale(0)",
     text: "black",
   },

@@ -12,7 +12,7 @@ const Hero = (props) => {
       <img src="/imagenes/laptop.jpg" alt="Hero image"></img>
       <div
         className={classes.Mask}
-        style={{ backgroundColor: themeSlected.heroBackground, opacity: 0.8 }}
+        style={{ backgroundColor: themeSlected.heroBackground }}
       >
         <div className={classes.Image}>
           <img src="/imagenes/Image.jpg" alt="Image User"></img>
