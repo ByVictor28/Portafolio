@@ -30,15 +30,28 @@ const Contact = (props) => {
             <i className="fas fa-envelope"></i>
           </a>
         </CardContact>
-        <CardContact>
-          <a
-            style={{ color: themeSlected.color }}
-            href="http://web.whatsapp.com/send?text=Tu mensaje&phone=+524981238534&abid=+524981238534"
-            target="_blank"
-          >
-            <i className="fas fa-phone-alt"></i>
-          </a>
-        </CardContact>
+        <div className={classes.WhatsappMovile}>
+          <CardContact>
+            <a
+              style={{ color: themeSlected.color }}
+              href="whatsapp://send?text=Hola!! mi nombre es:&phone=+524981238534&abid=+524981238534"
+              target="_blank"
+            >
+              <i className="fas fa-phone-alt"></i>
+            </a>
+          </CardContact>
+        </div>
+        <div className={classes.WhatsappDesktop}>
+          <CardContact>
+            <a
+              style={{ color: themeSlected.color }}
+              href="http://web.whatsapp.com/send?text=Hola!! mi nombre es:&phone=+524981238534&abid=+524981238534"
+              target="_blank"
+            >
+              <i className="fas fa-phone-alt"></i>
+            </a>
+          </CardContact>
+        </div>
         <CardContact>
           <a
             style={{ color: themeSlected.color }}
