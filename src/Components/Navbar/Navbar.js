@@ -107,13 +107,13 @@ const Navbar = ({ click }) => {
           </li>
           <div className={classes.Flags}>
             <FlagIcon
-              className={!spanishSelected && classes.disabled}
+              className={!spanishSelected ? classes.disabled : ""}
               code="US"
               size={30}
               onClick={() => changeLanguage("en")}
             />
             <FlagIcon
-              className={spanishSelected && classes.disabled}
+              className={spanishSelected ? classes.disabled : ""}
               code="MX"
               size={30}
               onClick={() => changeLanguage("es")}
