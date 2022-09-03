@@ -26,7 +26,11 @@ function App() {
         {/*
     <!-- Primary Meta Tags -->
     */}
-        <title>Victor Manuel Delfin Santos</title>
+        <title>Victor Manuel Delfin Santos ...</title>
+        <meta
+          name="description"
+          content="I am a software engineer who is committed to delivering high-quality results. I love working with a team of talented individuals to achieve goals, and to help my fellow team members."
+        />
         <meta name="title" content="Victor Manuel Delfin Santos" />
         <meta
           name="description"
